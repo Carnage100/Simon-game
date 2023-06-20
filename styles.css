@@ -1,0 +1,80 @@
+body {
+    background-color: #393E46;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-family: 'VT323', cursive;
+    color: burlywood;
+    text-align:center;
+}
+
+footer {
+    font-size: 2rem;
+    font-family: 'VT323', cursive;
+    color: burlywood;
+}
+
+
+
+#green {
+    background-color: green;
+    width: 10rem;
+    height: 10rem;
+    border-style: solid;
+    border-radius: 15%;
+    border-width: thick;
+    margin: 10px;
+    display: inline-block;
+}
+#red {
+    background-color: red;
+    width: 10rem;
+    height: 10rem;
+    border-style: solid;
+    border-radius: 15%;
+    border-width: thick;
+    margin: 10px;
+    display: inline-block;
+}
+
+#yellow {
+    background-color: yellow;
+    width: 10rem;
+    height: 10rem;
+    border-style: solid;
+    border-radius: 15%;
+    border-width: thick;
+    margin: 10px;
+    display: inline-block;
+}
+
+#blue {
+    background-color: blue;
+    width: 10rem;
+    height: 10rem;
+    border-style: solid;
+    border-radius: 15%;
+    border-width: thick;
+    margin: 10px;
+    display: inline-block;
+}
+
+
+.container {
+    width : 70%;
+    margin : auto;
+    text-align: center;
+    cursor: url("images/cursor.png") , pointer;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
