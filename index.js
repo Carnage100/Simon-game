@@ -17,7 +17,11 @@ $(".btn").click(function()
 });
 
 //keypress to start the game.
-$(document).on("keydown", function()
+$(document).on("keydown", handler);
+$(document).on("click", handler);
+$(document).on("tap", handler);
+
+function handler()
 {
     if(!started)                              //if game is not started then execute.if started, make started=true.
     {
@@ -25,7 +29,7 @@ $(document).on("keydown", function()
     nextSequence();
     started = true;
     }
-});
+}
 
 //To reset the game.
 function startOver()
