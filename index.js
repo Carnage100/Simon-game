@@ -18,8 +18,8 @@ $(".btn").click(function()
 
 //keypress to start the game.
 $(document).on("keydown", handler);
-$(document).on("click", handler);
-$(document).on("tap", handler);
+$("h1").on("click", handler);
+$("h1").on("tap", handler);
 
 function handler()
 {
@@ -61,7 +61,7 @@ function checkAnswer(currentLevel)
             $("body").removeClass("game-over");                          //Remove game-over class after 200ms.
         },200);
 
-        $("#level-title").text("Game over, press any key to start");
+        $("#level-title").text("Game over, press any key to start or click Here.");
 
         startOver();                                                     //Call the reset function to make control run through the program again.
     }
