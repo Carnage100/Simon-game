@@ -17,7 +17,7 @@ $(".btn").click(function()
 });
 
 //keypress to start the game.
-$(document).on("keydown", function()
+$(document).on("click", function()
 {
     if(!started)                              //if game is not started then execute.if started, make started=true.
     {
