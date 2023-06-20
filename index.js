@@ -17,7 +17,7 @@ $(".btn").click(function()
 });
 
 //keypress to start the game.
-$(document).on("tap", function()
+$(document).on("click", function()
 {
     if(!started)                              //if game is not started then execute.if started, make started=true.
     {
@@ -73,7 +73,7 @@ function nextSequence()
     var randomChosenColor = buttonColors[randomNumber];
     gamePatterns.push(randomChosenColor);
 
-    $("#" + randomChosenColor).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);   //Button indicator for user to make them aware which button
+    $("#" + randomChosenColor).fadeOut(100).fadeIn(100);   //Button indicator for user to make them aware which button
     playSound(randomChosenColor);                                                   //to click.
 }
 
