@@ -49,7 +49,7 @@ function checkAnswer(currentLevel)
             setTimeout(function(){
                 nextSequence();
             },1000);
-            userClickedPattern=[];                                       //Making user array empty for next level.
+            
         }
     }
     else
@@ -70,6 +70,7 @@ function checkAnswer(currentLevel)
 //Random generation of number that will take a random colored button and display it in form of button clicked.
 function nextSequence()
 {
+    userClickedPattern=[];                                       //Making user array empty for next level.
     level++;
     $("#level-title").text("Level " + level);
 
